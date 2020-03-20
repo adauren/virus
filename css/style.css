@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.logo img {
+  max-height: 100%;
+  background-size: cover;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+}
+.header {
+  background-color: #a6bc37;
+  height: 10vh;
+}
+.header_inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header_inner_logo {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  width: 100%;
+}
+.logo {
+  height: 100%;
+}
+.logo_ukma {
+  display: flex;
+  justify-content: flex-end;
+}
+.title {
+  font-size: 58px;
+  color: #fff;
+}
+.banner {
+  display: flex;
+  padding: 127px 0px 141px 124px;
+}
+.banner_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 120px;
+}
