@@ -1,7 +1,13 @@
+@font-face {
+  font-family: Museo Cyrl; /* Имя шрифта */
+  src: url("../fonts/exljbris\ -\ Museo\ Cyrl\ 500.otf"); /* Путь к файлу со шрифтом */
+}
+
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  font-family: Museo Cyrl;
 }
 .logo img {
   max-height: 100%;
@@ -14,7 +20,7 @@
 }
 .header {
   background-color: #a6bc37;
-  height: 10vh;
+  padding: 20px 0;
 }
 .header_inner {
   display: flex;
@@ -24,6 +30,7 @@
 .header_inner_logo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 8vh;
   width: 100%;
 }
@@ -34,17 +41,73 @@
   display: flex;
   justify-content: flex-end;
 }
-.title {
-  font-size: 58px;
-  color: #fff;
+.logo_covid {
+  height: 30px;
 }
 .banner {
   display: flex;
+  overflow: hidden;
   padding: 127px 0px 141px 124px;
+}
+.banner_img {
+  flex: 0 0 50%;
+}
+.banner_img img {
+  background-size: cover;
+  max-width: 100%;
 }
 .banner_content {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  max-width: 100%;
   margin-left: 120px;
+}
+.banner_content_head {
+  font-size: 75px;
+  color: #769500;
+}
+.banner_content_info {
+  font-size: 33px;
+  color: #0b0b0b;
+}
+.guide_divider {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px 15px 15px;
+  margin: 40px 0;
+  background-color: #7f9416;
+  width: 10000px;
+  transform: translateX(-13px);
+}
+.guide_divider_content {
+  color: #fff;
+  font-size: 46px;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+
+  .banner_content {
+    margin-left: 90px;
+  }
+  .banner_img {
+    flex: 0 0 45%;
+  }
+  .banner_content_head {
+    font-size: 55px;
+    color: #769500;
+  }
+  .banner_content_info {
+    font-size: 20px;
+    color: #0b0b0b;
+  }
+  .guide_divider {
+    margin: 20px 0;
+  }
+  .guide_divider_content {
+    font-size: 30px;
+  }
 }
