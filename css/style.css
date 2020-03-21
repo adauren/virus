@@ -9,6 +9,9 @@
   margin: 0px;
   font-family: Museo Cyrl;
 }
+ul {
+  list-style: none;
+}
 .logo img {
   max-height: 100%;
   background-size: cover;
@@ -17,6 +20,9 @@
   width: 1440px;
   margin: 0 auto;
   height: 100%;
+}
+.dark_green {
+  background-color: #7f9416;
 }
 .header {
   background-color: #a6bc37;
@@ -31,7 +37,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8vh;
+  height: 10vh;
   width: 100%;
 }
 .logo {
@@ -63,12 +69,16 @@
   max-width: 100%;
   margin-left: 120px;
 }
-.banner_content_head {
+.content_head {
   font-size: 75px;
   color: #769500;
 }
-.banner_content_info {
+.content_info {
   font-size: 33px;
+  color: #0b0b0b;
+}
+.content_info_big {
+  font-size: 50px;
   color: #0b0b0b;
 }
 .guide_divider {
@@ -84,30 +94,125 @@
   color: #fff;
   font-size: 46px;
 }
-
+.dark_color_white {
+  color: #fff;
+}
+.light_color_dark {
+  color: #0b0b0b;
+}
+.ready {
+  padding: 100px 0;
+}
+.divider_long {
+  height: 11px;
+  background-color: #a6bc37;
+  width: 160vw;
+  margin: 40px 0 45px 0;
+  transform: translateX(-88vw);
+}
+.divider_small {
+  height: 6px;
+  background-color: #a6bc37;
+  margin: 45px 0 40px 0;
+  width: 160vw;
+  transform: translateX(-150vw);
+}
+.main_info {
+  background-color: #d3d674;
+  padding: 100px 0 95px 0;
+}
+.content_info_item {
+  display: flex;
+}
+.content_info_item img {
+  height: 18px;
+  transform: translateY(3px);
+  margin-right: 26px;
+}
+.content_info_item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.content_info_img {
+  max-width: 60%;
+}
+.answer {
+  color: #cc2f2f;
+  font-size: 150px;
+  text-transform: uppercase;
+}
+.content_info_description {
+  margin-bottom: 25px;
+}
+.symptom_list {
+  display: flex;
+  flex-flow: wrap;
+}
+.symptom_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0 0 50%;
+}
+.symptom_img_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 216px;
+}
+.table_img {
+  max-width: 100%;
+}
+.footer_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.official {
+  margin: 75px 0 51px 0;
+}
+.official_links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.official_link {
+  text-decoration: none;
+  color: #0b0b0b
+}
 @media screen and (min-width: 992px) {
   .container {
     width: 960px;
   }
-
   .banner_content {
     margin-left: 90px;
   }
   .banner_img {
     flex: 0 0 45%;
   }
-  .banner_content_head {
+  .content_head {
     font-size: 55px;
-    color: #769500;
   }
-  .banner_content_info {
+  .content_info {
     font-size: 20px;
-    color: #0b0b0b;
+  }
+  .content_info_big {
+    font-size: 36px;
   }
   .guide_divider {
     margin: 20px 0;
   }
   .guide_divider_content {
     font-size: 30px;
+  }
+  .divider_long {
+    height: 8px;
+  }
+  .divider_small {
+    height: 4px;
+  }
+  .content_info_item img {
+    margin-right: 16px;
+  }
+  .answer {
+    font-size: 120px;
   }
 }
